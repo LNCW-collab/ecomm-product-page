@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexisNexis Software Guide</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; }
+    a { color: #E12228; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .container { display: flex; max-width: 1200px; margin: 0 auto; }
+    .sidebar { width: 250px; border-right: 1px solid #e1e1e1; height: calc(100vh - 70px); position: sticky; top: 70px; overflow-y: auto; padding: 1rem; background-color: #fafafa; }
+    .sidebar h3 { font-size: 1rem; margin-bottom: 1rem; color: #555; }
+    .sidebar ul { list-style: none; }
+    .sidebar li { margin: 0.5rem 0; }
+    .sidebar li a { font-size: 0.95rem; display: block; }
+
+    .main { flex: 1; padding: 2rem; }
+
+    /* Header */
+    header { background-color: #fff; border-bottom: 1px solid #e1e1e1; position: sticky; top: 0; z-index: 1000; }
+    .nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; padding: 1rem; margin: 0 auto; }
+    .nav-logo img { height: 40px; }
+    .nav-links { display: flex; gap: 1rem; }
+    .nav-links a { font-weight: bold; font-size: 0.95rem; }
+
+    /* Hero */
+    .hero { background-color: #f9f9f9; padding: 3rem 2rem; text-align: left; border-bottom: 1px solid #e1e1e1; }
+    .hero h1 { font-size: 2rem; color: #E12228; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1rem; color: #555; max-width: 700px; }
+
+    /* Section */
+    section { margin-bottom: 3rem; }
+    section h2 { font-size: 1.5rem; margin-bottom: 1rem; color: #E12228; }
+    section p { line-height: 1.6; color: #555; margin-bottom: 1rem; }
+
+    /* Footer */
+    footer { background-color: #333; color: #fff; padding: 2rem 0; margin-top: 2rem; }
+    .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 1rem; }
+    .footer-column { flex: 1; min-width: 200px; margin-bottom: 1rem; }
+    .footer-column h4 { margin-bottom: 1rem; color: #fff; font-size: 1rem; }
+    .footer-column a { display: block; margin-bottom: 0.5rem; color: #ccc; font-size: 0.9rem; }
+    .footer-column a:hover { color: #fff; }
+    .footer-bottom { text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #aaa; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      .sidebar { display: none; }
+      .nav-links { display: none; }
+      .nav { justify-content: space-between; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <div class="nav-logo">
+        <img src="https://www.lexisnexis.com/images/ln-logo.png" alt="LexisNexis Logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#projects">Projects</a>
+        <a href="#boards">Boards</a>
+        <a href="#issues">Issues & Filters</a>
+        <a href="#reports">Reports & Insights</a>
+        <a href="#apps">Apps & Integrations</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="main">
+      <h1>Welcome to the LexisNexis Product Guide</h1>
+      <p>Everything you’ll need to know to start using LexisNexis—from basic concepts to advanced workflows. Whether you’re new to LexisNexis or looking to expand your usage, this guide has you covered.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Product Guide</h3>
+      <ul>
+        <li><strong>Getting started</strong></li>
+        <ul>
+          <li><a href="#introduction">Introduction to LexisNexis</a></li>
+          <li><a href="#teams">LexisNexis for Teams</a></li>
+          <li><a href="#steps">7 Steps to Get Started</a></li>
+        </ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#boards">Boards</a></li>
+        <li><a href="#issues">Issues & Filters</a></li>
+        <li><a href="#reports">Reports & Insights</a></li>
+        <li><a href="#apps">Apps & Integrations</a></li>
+        <li><a href="#permissions">Permissions & Security</a></li>
+        <li><a href="#administration">Administration</a></li>
+        <li><a href="#api">API & Automation</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>Introduction to LexisNexis</h2>
+        <p>LexisNexis is the world’s leading provider of legal, regulatory, and business information and analytics. This section will introduce key concepts and terminology to help you understand the platform’s capabilities.</p>
+      </section>
+
+      <!-- Teams Section -->
+      <section id="teams">
+        <h2>LexisNexis for Teams</h2>
+        <p>LexisNexis for Teams offers collaborative features designed for groups. Learn how to set up workspaces, share resources, and manage permissions to streamline team workflows.</p>
+      </section>
+
+      <!-- Steps to Get Started -->
+      <section id="steps">
+        <h2>7 Steps to Get Started</h2>
+        <ol>
+          <li><strong>Create an Account:</strong> Sign up for a LexisNexis account and verify your email.</li>
+          <li><strong>Set Up Your Profile:</strong> Complete your user profile and set notification preferences.</li>
+          <li><strong>Download & Install:</strong> Install any necessary desktop applications or browser extensions.</li>
+          <li><strong>Connect Data Sources:</strong> Link public and private databases to your workspace.</li>
+          <li><strong>Configure Permissions:</strong> Assign roles and access levels to team members.</li>
+          <li><strong>Explore Key Features:</strong> Try basic and advanced search, legal analytics, and report generation.</li>
+          <li><strong>Customize Your Dashboard:</strong> Tailor your dashboard to display the metrics and documents most relevant to you.</li>
+        </ol>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Projects in LexisNexis allow you to organize research around a specific case, deal, or analysis. Learn how to create, manage, and collaborate on projects.</p>
+      </section>
+
+      <!-- Boards Section -->
+      <section id="boards">
+        <h2>Boards</h2>
+        <p>Boards provide a visual way to track tasks, research progress, and case statuses. Discover how to create boards, add cards, and customize workflows.</p>
+      </section>
+
+      <!-- Issues & Filters Section -->
+      <section id="issues">
+        <h2>Issues & Filters</h2>
+        <p>Use Issues and Filters to track tasks, assign action items, and create custom queries. This section covers creating issues, using filters, and saving searches.</p>
+      </section>
+
+      <!-- Reports & Insights Section -->
+      <section id="reports">
+        <h2>Reports & Insights</h2>
+        <p>Generate detailed reports and gain insights with our analytics tools. Learn how to customize reports, schedule automated runs, and interpret results.</p>
+      </section>
+
+      <!-- Apps & Integrations Section -->
+      <section id="apps">
+        <h2>Apps & Integrations</h2>
+        <p>Extend LexisNexis functionality with apps and integrations. Connect to third-party services, add custom plugins, and streamline your workflow.</p>
+      </section>
+
+      <!-- Permissions & Security Section -->
+      <section id="permissions">
+        <h2>Permissions & Security</h2>
+        <p>Manage user access, system roles, and data security. Understand how to configure granular permissions, audit logs, and secure data storage.</p>
+      </section>
+
+      <!-- Administration Section -->
+      <section id="administration">
+        <h2>Administration</h2>
+        <p>Administrators can configure global settings, manage billing, and oversee tenant-wide configurations. Learn how to set up organization-wide preferences.</p>
+      </section>
+
+      <!-- API & Automation Section -->
+      <section id="api">
+        <h2>API & Automation</h2>
+        <p>Automate tasks and integrate with external systems using LexisNexis APIs. Explore endpoints for document retrieval, user management, and analytics export.</p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Product</h4>
+        <a href="#overview">Overview</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#projects">Projects</a>
+        <a href="#boards">Boards</a>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="https://www.lexisnexis.com/privacy">Privacy Policy</a>
+        <a href="https://www.lexisnexis.com/terms">Terms of Service</a>
+        <a href="https://www.lexisnexis.com/about">About Us</a>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <a href="https://www.lexisnexis.com/support">Help Center</a>
+        <a href="https://www.lexisnexis.com/contact">Contact Us</a>
+        <a href="https://www.lexisnexis.com/training">Training</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 LexisNexis. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
